@@ -59,7 +59,7 @@ int main() {
         ram_idx++;
 
         if ((i + 1) % slots == 0) {
-            sort_and_store_in_sec_storage(i, ram, secondary_storage);
+            sort_and_store_in_sec_storage(i + 1 - slots, ram, secondary_storage);
             clear_ram(ram);
             ram_idx = 0;
         }
